@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #fff;
+}
+
+header {
+    height: 90px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .5s;    
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.comentarios {
+    padding: 3%;
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 60px;
+}
+
+
+.borda-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+section {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.column-content {
+    width: 75%;
+}
+
+.movie-review-container {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.trailer {
+    width: 100%;
+}
+
+.sinopse {    
+    text-align: justify;
+}
+.Parent a{
+    background-color: rgba(255, 0, 0, 0.049);
+    font-size: 29px;
+}
+
+input[disabled] {
+    background-color: #f0f0f0; /* Cor de fundo "desativada" */
+    color: #999; /* Cor do texto "desativado" */
+    cursor: not-allowed; /* Cursor de "não permitido" */
+  }
+
+  /*comentários dos usuários*/
+.avaliacao {
+    display: grid;
+}    
+
+.usuario {
+    background-color: #5553533a;
+    display: flex;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    text-align: justify;
+    color: aliceblue;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Nota {
+    height: 100px; 
+    width: 100px;
+    max-width: 100px;
+    border: 2px solid #D21617; 
+    border-radius: 5px;
+    background-color: #D21617;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 2%;
+    box-sizing: border-box;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    flex: none;
+}
+
+.BackgroundStyle{
+    background-color: transparent;
+    display: inline;
+    align-items: center;    
+    justify-items: center;
+    margin-left: 10px;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.movie-review-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilo para o Metascore */
+.metascore {
+    background-color: #D21617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+}
+
+.score-label {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 3px;
+    background-color: transparent;
+}
+
+/* Detalhes da avaliação */
+.review-details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+.score-bar {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+/* Segmentos da barra de score */
+.score-segment {
+    height: 100%;
+}
+
+.green {
+    background-color: #4CAF50;
+    width: 50%;
+}
+
+.yellow {
+    background-color: #FFEB3B; 
+    width: 30%;
+}
+
+.red {
+    background-color: #F44336;
+    width: 20%;
+}
+
+/* Resumo dos reviews */
+.review-summary {
+    font-size: 12px;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.review-count {
+    color: #aaa;
+    margin-left: 8px;
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+
+    .borda-principal {
+        align-items: center;
+        flex-direction: column;        
+    }
+
+    .column-content {
+        width: 100%;       
+    }
+
+    .movie-review-container{
+        width: 100%;      
+        align-items: center;
+    }
+
+    .sinopse {
+        font-size: 12px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .metascore {
+        width: 75px;
+        height: 75px;
+    }
+
+    .review-details {
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .avaliacao {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .Nota {
+        width: 75px;
+        height: 75px;
+    }
+
+    .BackgroundStyle {
+        font-size: 12px;
+    }
+}
+
